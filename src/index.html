@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Interactive Blockly Programming App</title>
+  </head>
+  <body>
+    <header id="appHeader">
+      <h1>Interactive Blockly App</h1>
+      <p>Drag blocks from the toolbox to create interactive programs!</p>
+    </header>
+    <div id="pageContainer">
+      <div id="outputPane">
+        <div id="exampleControls">
+          <h3>Example Programs:</h3>
+          <button id="loadHelloWorld">Hello World</button>
+          <button id="loadGreeting">Interactive Greeting</button>
+          <button id="loadCalculator">Simple Calculator</button>
+          <button id="loadNumberGame">Number Game</button>
+          <button id="loadMadLibs">Mad Libs</button>
+          <button id="clearWorkspace">Clear All</button>
+        </div>
+        <h3>Generated Code:</h3>
+        <pre id="generatedCode"><code></code></pre>
+        <h3>Output:</h3>
+        <div id="output"></div>
+      </div>
+      <div id="blocklyDiv"></div>
+    </div>
+  </body>
+</html>

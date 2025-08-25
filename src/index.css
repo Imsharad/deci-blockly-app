@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  max-width: 100vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#appHeader {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#appHeader h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+#appHeader p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+pre,
+code {
+  overflow: auto;
+}
+
+#pageContainer {
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  height: calc(100vh - 120px);
+}
+
+#blocklyDiv {
+  flex-basis: 100%;
+  height: 100%;
+  min-width: 600px;
+}
+
+#outputPane {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  flex: 0 0 400px;
+  overflow: auto;
+  margin: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#outputPane h3 {
+  margin: 0.5rem 1rem;
+  color: #495057;
+  font-size: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.5rem;
+}
+
+#exampleControls {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+#exampleControls h3 {
+  margin: 0 0 0.5rem 0;
+  border: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+#exampleControls button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.2s;
+}
+
+#exampleControls button:hover {
+  background: #0056b3;
+}
+
+#clearWorkspace {
+  background: #dc3545 !important;
+}
+
+#clearWorkspace:hover {
+  background: #c82333 !important;
+}
+
+#generatedCode {
+  height: 50%;
+  background-color: #f8f9fa;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  font-size: 0.9rem;
+}
+
+#output {
+  height: 50%;
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem;
+  overflow-y: auto;
+}
